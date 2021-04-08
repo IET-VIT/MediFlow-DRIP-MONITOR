@@ -26,6 +26,7 @@ The block diagram above represents the correct working of the model in that firs
 ### 🔑 KEY FEATURES OF THE APP
 - Full detail of the solution whether the solution is about to finish or not to the allocated nurse.
 - Will give information if bubbles are formed in the solution or not 
+- Login firebase for staff of the hospital
 ### 🌈 CONCLUSION
 The proposed solution is going to help the hospital staff in a very fruitfull manner through which they need not to visit in the patient room repeatedly just for checking the drip count and to detect if there are bubbles formed or not we have successfully solved this problem in a digital way usin IOT.
 
