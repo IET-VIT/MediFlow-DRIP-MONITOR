@@ -1,4 +1,4 @@
-package com.undamped.khyaal;
+package com.example.medicareapp;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,6 +18,9 @@ import com.google.android.gms.tasks.Task;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+
+import java.net.DatagramSocket;
+import java.nio.channels.NetworkChannel;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
