@@ -1,30 +1,19 @@
-package com.undamped.khyaal;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
+package com.example.medicareapp;
 
 import android.content.Intent;
-
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.FrameLayout;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
-import com.undamped.khyaal.database.MedDao;
-import com.undamped.khyaal.database.MedDatabase;
-import com.undamped.khyaal.entity.Medicine;
-
-import butterknife.BindView;
-import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -45,26 +34,7 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         mAuth = FirebaseAuth.getInstance();
 
-        scanFloatingBtn.setOnClickListener(view -> {
-            getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_frame, new ScanFragment()).commit();
-        });
-
-        bottomNavigation.setSelectedItemId(R.id.action_medicines);
-        getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_frame, new MedicineFragment()).commit();
-
-        bottomNavigation.setOnNavigationItemSelectedListener(item -> {
-            switch (item.getItemId()) {
-                case R.id.action_profile:
-                    getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_frame, new ProfileFragment()).commit();
-                    return true;
-
-                case R.id.action_medicines:
-                    getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_frame, new MedicineFragment()).commit();
-                    return true;
             }
-            return false;
-        });
-    }
 
     @Override
     protected void onStart() {
@@ -75,39 +45,11 @@ public class MainActivity extends AppCompatActivity {
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);
             finish();
-        } else {
-            MedDao medDao = MedDatabase.getInstance(MainActivity.this).medDao();
-            changesMed = false;
+        }
 
-            DatabaseReference mRef = FirebaseDatabase.getInstance().getReference("Users");
-            mRef.child(mAuth.getCurrentUser().getUid()).addListenerForSingleValueEvent(new ValueEventListener() {
-                @Override
-                public void onDataChange(@NonNull DataSnapshot snapshot) {
-                    NAME = snapshot.child("Name").getValue().toString();
-                    for(DataSnapshot snap : snapshot.child("Medicines").getChildren()){
-                        if(snap.exists()) {
-                            changesMed = true;
-                            char[] dose = snap.child("dose").getValue().toString().toCharArray();
-                            Medicine med = new Medicine();
-                            med.setName(snap.child("name").getValue().toString());
-                            med.setDays(Integer.parseInt(snap.child("days").getValue().toString().replaceAll("[^0-9]", "")));
-                            if(dose[0] == '1')
-                                med.setMorning(true);
-                            if(dose[2] == '1')
-                                med.setAfternoon(true);
-                            if(dose[4] == '1')
-                                med.setEvening(true);
-
-                            medDao.insertMed(med);
-                        }
-                    }
-                    removeTheNewMeds();
-                    if(changesMed)
-                        Toast.makeText(MainActivity.this, "New Medicines added", Toast.LENGTH_LONG).show();
-                }
-
-                @Override
-                public void onCancelled(@NonNull DatabaseError error) {
+        @Override
+        Throwable error;
+        public void onCancelled (@NonNull (DatabaseError)  error) {
                     Toast.makeText(getApplicationContext(), "Error in retrieving data", Toast.LENGTH_LONG).show();
                     Log.e("Error: MainActivity", error.getMessage());
                 }
@@ -115,8 +57,22 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void removeTheNewMeds() {
-        DatabaseReference mRef = FirebaseDatabase.getInstance().getReference("Users");
-        mRef.child(mAuth.getCurrentUser().getUid()).child("Medicines").removeValue();
-    }
+private void checkLoginDetails(String authToken) {
+        Retrofit retrofit= RetrofitClientinstance.getRetrofitInstance();
+final InterfaceAPI api = retrofit.create(InterfaceAPI.class);
+
+        Call<String> call = api.checkLogin(authToken);
+        call.enqueue(new Callback<String>() {
+@Override
+public void onResponse(Call<String> call, Response<String> response) {
+        if(response.isSuccessful()){
+        Toast.makeText(getApplicationContext(), "Successfully logged in.", Toast.LENGTH_LONG).show();
+        }
+        else{
+        Toast.makeText(getApplicationContext(), "Invalid credentials.", Toast.LENGTH_LONG).show();
+        }
+        }
+        }
+
+    
 }
