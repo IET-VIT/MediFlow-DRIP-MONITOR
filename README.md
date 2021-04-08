@@ -22,7 +22,7 @@ This project greatly increases the efficiency of the hospital staff as a whole. 
 ### 💡 Circuit Schematic 
 ![image](https://user-images.githubusercontent.com/76275812/113965453-05128100-984b-11eb-9aae-6446cb0986b2.png)
 ### ⚙ Working
-The block diagram above represents the correct working of the model in that first it will measure the level of solution left in the bottle through the ultrasonic sensor and if there are any bubbles formed in that solution and due to which there is an obstacle in the path of the flowing solution through a drip that will be detected by the LDR. The data produced by the ultrasonic sensor and LDR  will be sent to the firebase through the ESP8266 module. The same data will be sent to the Mobile APP, where appropriate warning messages will be displayed in case of bubble formation or the drip levels being too low. 
+The block diagram above represents the correct working of the model in that first it will measure the level of solution left in the bottle through the ultrasonic sensor and if there are any bubbles formed in that solution and due to which there is an obstacle in the path of the flowing solution through a drip that will be detected by the LDR. The data produced by the ultrasonic sensor and LDR  will be sent to the firebase through the ESP8266 module. The same data will be sent to the Mobile App, where appropriate warning messages will be displayed in case of bubble formation or the drip levels being too low. 
 ### 🔑 KEY FEATURES OF THE APP
 - Full detail of the solution whether the solution is about to finish or not to the allocated nurse.
 - Will give information if bubbles are formed in the solution or not 
