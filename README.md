@@ -8,13 +8,11 @@ This project elaborates a way to efficiently monitor the drip level at hospitals
 This project greatly increases the efficiency of the hospital staff as a whole. The pandemic has led to a lot of hospitals being completely occupied, and the hostel staff overwhelmed. By not having to conduct manual routine checks on the drip levels and drip conditions of every patient, the workload of the hospital staff is exceedingly diminished. Automation in such essential tasks is the next step towards providing more efficient and convenient healthcare.
 
 ### 📚 Tech stack
-<B>HARDWARE</B>
 - Arduino Uno
 - HCSR-04 Ultrasonic sensor
 - Photo-resistor/light sensor
 - Light source
 - Esp8266-01 wifi module
-</B>SOFTWARE</B>
 - ANDROID STUDIO
 
 ###  Block Diagram
