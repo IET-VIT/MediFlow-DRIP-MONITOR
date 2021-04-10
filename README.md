@@ -20,13 +20,13 @@ This project greatly increases the efficiency of the hospital staff as a whole. 
 ### 💡 Circuit Schematic 
 ![image](https://user-images.githubusercontent.com/76275812/113965453-05128100-984b-11eb-9aae-6446cb0986b2.png)
 ### ⚙ Working
-The block diagram above represents the correct working of the model in that first it will measure the level of solution left in the bottle through the ultrasonic sensor and if there are any bubbles formed in that solution and due to which there is an obstacle in the path of the flowing solution through a drip that will be detected by the LDR. The data produced by the ultrasonic sensor and LDR  will be sent to the firebase through the ESP8266 module. The same data will be sent to the Mobile App, where appropriate warning messages will be displayed in case of bubble formation or the drip levels being too low. 
+The block diagram above represents the correct working of the model in that first it will measure the level of solution left in the bottle through the ultrasonic sensor and if there are any bubbles formed in that solution and due to which there is an obstacle in the path of the flowing solution through a drip that will be detected by the LDR. The data produced by the ultrasonic sensor and LDR  will be sent to the firebase through the ESP8266 module. The same data will be sent to the Mobile App, where appropriate warnings can be conveyed to the staff. 
 ### 🔑 KEY FEATURES OF THE APP
 - Full detail of the solution whether the solution is about to finish or not to the allocated nurse.
 - Will give information if bubbles are formed in the solution or not 
 - Login firebase for staff of the hospital
 ### 🌈 CONCLUSION
 The proposed solution is going to help the hospital staff in a very fruitful manner through which they need not visit the patient's room repeatedly just for checking the drip count or to detect bubble formation. We have successfully solved this problem in a virtual format using IoT.
-
-
+### FUTURE PROSPECT
+To make our system more useful and convinient, we plan on adding a one touch communication portal, through which the patient or their family member can edit request for assistance from a nurse instead of the family member going out to call them, leaving the patient unattended. Apart from this we will switch from displaying a constant message of the flowing drip and bubble formation, to a pop-up, non-dissmissable warning message, for a more efficient and user friendly application.
 
