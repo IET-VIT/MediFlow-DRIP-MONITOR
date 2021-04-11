@@ -28,5 +28,5 @@ The block diagram above represents the correct working of the model in that firs
 ### 🌈 CONCLUSION
 The proposed solution is going to help the hospital staff in a very fruitful manner through which they need not visit the patient's room repeatedly just for checking the drip count or to detect bubble formation. We have successfully solved this problem in a virtual format using IoT.
 ### FUTURE PROSPECT
-To make our system more useful and convinient, we plan on adding a one touch communication portal, through which the patient or their family member can edit request for assistance from a nurse instead of the family member going out to call them, leaving the patient unattended. Apart from this we will switch from displaying a constant message of the flowing drip and bubble formation, to a pop-up, non-dissmissable warning message, for a more efficient and user friendly application.
+To make our system more useful and convenient, we plan on adding a one touch communication portal, through which the patient or their family member can request for assistance from a nurse instead of the family member going out to call them, leaving the patient unattended. Apart from this we will switch from displaying a constant message of the flowing drip and bubble formation, to a pop-up, non-dismissable warning message, for a more efficient and user friendly application.
 
