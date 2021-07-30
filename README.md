@@ -20,10 +20,10 @@
     <img src="images/logo.png" alt="Logo" width="355.630965006" height="160">
   </a>
 
-  <h3 align="center">project_title</h3>
+  <h3 align="center">DRIP MONITOR</h3>
 
   <p align="center">
-    project_description
+    A Smart Drip that allows efficient and constant monitoring of various aspects of the patient.
     <br />
     <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
     <br />
@@ -169,7 +169,7 @@ Project Link: [https://github.com/Kaustubh251002/Drip-Monitor/](https://github.c
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo.svg?style=for-the-badge
+[contributors-shield1]: https://img.shields.io/github/contributors/github_username/repo.svg?style=for-the-badge
 [contributors-url]: https://github.com/github_username/repo/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/github_username/repo.svg?style=for-the-badge
 [forks-url]: https://github.com/github_username/repo/network/members
@@ -192,13 +192,4 @@ Project Link: [https://github.com/Kaustubh251002/Drip-Monitor/](https://github.c
 
 
 
-
-### 🔑 KEY FEATURES OF THE APP
-- Full detail of the solution whether the solution is about to finish or not to the allocated nurse.
-- Will give information if bubbles are formed in the solution or not 
-- Login firebase for staff of the hospital
-### 🌈 CONCLUSION
-The proposed solution is going to help the hospital staff in a very fruitful manner through which they need not visit the patient's room repeatedly just for checking the drip count or to detect bubble formation. We have successfully solved this problem in a virtual format using IoT.
-### FUTURE PROSPECT
-To make our system more useful and convenient, we plan on adding a one touch communication portal, through which the patient or their family member can request for assistance from a nurse instead of the family member going out to call them, leaving the patient unattended. Apart from this we will switch from displaying a constant message of the flowing drip and bubble formation, to a pop-up, non-dismissable warning message, for a more efficient and user friendly application.
 
