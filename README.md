@@ -68,7 +68,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-[![DEMO VIDEO](https://user-images.githubusercontent.com/76275812/113965453-05128100-984b-11eb-9aae-6446cb0986b2.png)](https://www.youtube.com/watch?v=aGP9ZlHZKQM)
+[![DEMO VIDEO](https://user-images.githubusercontent.com/76275812/113965879-d1842680-984b-11eb-9123-1319eb61bb4a.png)](https://www.youtube.com/watch?v=aGP9ZlHZKQM)
 
 This project elaborates a way to efficiently monitor the drip level at hospitals, while also detecting any bubble formation in the liquid used; a process that is currently done manually by nurses when they periodically check the drip. In addition to the functional efficiency of this project, it is also cost-effective. With the use of a light sensor, an ultrasonic sensor, a light source, and a microcontroller system, we provide a way to automatically monitor the drip levels. An accompanying app notifies the concerned hospital staff about issues and irregularities pertaining to the drip bottle.
 
@@ -112,9 +112,9 @@ To get a local copy up and running follow these simple steps.
 <!-- USAGE EXAMPLES -->
 ## Usage
 This project greatly increases the efficiency of the hospital staff as a whole. The pandemic has led to a lot of hospitals being completely occupied, and the hostel staff overwhelmed. By not having to conduct manual routine checks on the drip levels and drip conditions of every patient, the workload of the hospital staff is exceedingly diminished. Automation in such essential tasks is the next step towards providing more efficient and convenient healthcare.
-![image](https://user-images.githubusercontent.com/76275812/113965879-d1842680-984b-11eb-9123-1319eb61bb4a.png)
-![image](https://user-images.githubusercontent.com/76275812/113965387-e0b6a480-984a-11eb-8257-ee88194a1fce.png)
 
+![image](https://user-images.githubusercontent.com/76275812/113965387-e0b6a480-984a-11eb-8257-ee88194a1fce.png)
+![image](https://user-images.githubusercontent.com/76275812/113965453-05128100-984b-11eb-9aae-6446cb0986b2.png)
 # Working:
 The block diagram above represents the correct working of the model in that first it will measure the level of solution left in the bottle through the ultrasonic sensor and if there are any bubbles formed in that solution and due to which there is an obstacle in the path of the flowing solution through a drip that will be detected by the LDR. The data produced by the ultrasonic sensor and LDR  will be sent to the firebase through the ESP8266 module. The same data will be sent to the Mobile App, where appropriate warnings can be conveyed to the staff.
 
