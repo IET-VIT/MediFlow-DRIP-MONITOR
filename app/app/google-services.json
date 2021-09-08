@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "543394111182",
+    "firebase_url": "https://medicare-f72f4-default-rtdb.firebaseio.com",
+    "project_id": "medicare-f72f4",
+    "storage_bucket": "medicare-f72f4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:543394111182:android:908a528ff475765836fa9f",
+        "android_client_info": {
+          "package_name": "com.example.hackathonapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "543394111182-u7cp6b75rfqgfkpfannlrtdmnjb58j4i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvdG6l2nDfnHKFRFezW8XP8y8Lyy-_Mjg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "543394111182-u7cp6b75rfqgfkpfannlrtdmnjb58j4i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:543394111182:android:786ac656dce5dd4536fa9f",
+        "android_client_info": {
+          "package_name": "com.undamped.medicare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "543394111182-u7cp6b75rfqgfkpfannlrtdmnjb58j4i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvdG6l2nDfnHKFRFezW8XP8y8Lyy-_Mjg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "543394111182-u7cp6b75rfqgfkpfannlrtdmnjb58j4i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
