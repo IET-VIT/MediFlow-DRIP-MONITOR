@@ -148,7 +148,7 @@ Project Link: [https://github.com/Kaustubh251002/Drip-Monitor/](https://github.c
 
 
 <p align="center">
-	With :heart: by <a href="https://ietvit.tech/" target="_blank">Team Fourth Dimension, IET-VIT</a>
+	With :heart: by <a href="https://iet-vit.tech/" target="_blank">Team Fourth Dimension, IET-VIT</a>
 </p>
 
 
