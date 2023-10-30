@@ -13,7 +13,7 @@
 <p align="center">
 
 
-  <h3 align="center">DRIP MONITOR</h3>
+  <h3 align="center">MediFlow - DRIP MONITOR</h3>
 
   <p align="center">
     A Smart Drip that allows efficient and constant monitoring of various aspects of the patient.
